@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LZ Photography</title>
-    <link rel="stylesheet" href="css/home_styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Vidaloka&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact_styles.css">
 </head>
 
 <body>
@@ -29,23 +30,25 @@
         </nav>
     </div>
 
-<section class="introduction">
-        <h2>AT LZ PHOTOGRAPHY</h2>
+    <h2>Contact</h2>
 
+    <section class="contact">
 
- <div class="introduction-content">
-    <div class="text-block">
-        <p>Find the perfect photographer for your big day. Browse curated wedding portfolios, compare styles, and book with confidence.</p>
-        <p>Browse curated portfolios, read real client reviews, and compare pricing from trusted wedding photographers near you. Make your wedding memories last forever with stunning photos that capture every moment.</p>
-    </div>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name">
 
-    <img src="home1.jpg" alt="Bride and groom photo" class="image1">
-    <img src="home4.jpg" alt="Wedding photo outdoors" class="image2">
-    <img src="home3.jpg" alt="Wedding photo outdoors" class="image3">
-</div>
-</section>
+      <label for="email">Email:</label>
+      <input type="email" id="email">
 
-<footer>
+      <label for="message">Message:</label>
+      <textarea id="message"></textarea>
+
+      <button type="submit" class="submit">SUBMIT</button>
+    </form>
+  </section>
+
+  <footer>
     <div><img src="logo.png" alt="LZ Photography Logo" class="logo"></div>
 </footer>
 </body>

@@ -69,16 +69,20 @@ body {
   width: 80%;
   max-width: 900px;
   background: #153b74;
-  margin: 50px auto;
+  margin: 30px auto;
   padding: 35px;
-  border-radius: 30px;
+  border-radius: 10px;
   color: #ffd49e;
   text-align: center;
 }
 
-.contact h2 {
+h2 {
   font-size: 1.8rem;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  font-family: 'Vidaloka', serif;
+  font-size: 30px;
+  color: #153b74;
+  text-align: center;
 }
 
 .contact-form {
@@ -127,53 +131,12 @@ body {
     text-decoration: underline;
 }
 
-.introduction{
-  width: 90%;
-  margin: 30px auto;
-  padding: 20px;
-  color: #153b74;
+footer{
+    background-color: #114683;
+    padding: 5px;
 }
 
-.introduction h2 {
-  font-size: 3.8vw;
-  font-weight: bold;
-  margin-bottom: 15px;
-  letter-spacing: 1px;
-}
 
-.introduction-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.text-block p {
-  font-size: 3vw; 
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.introduction-content, .introduction-content p {
-  font-family: "Vidaloka", serif;
-}
-
-.image-block {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.image-block img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-footer {
-  width: 100%;
-  padding: 5px;
-  background: #114683;
-}
 
 @media screen and (min-width: 900px){
     .menu-icon{
@@ -200,42 +163,4 @@ footer {
     text-decoration: underline;
     background-color: #ffd49e;
 }
-
-
-.introduction-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        "text img1"
-        "img2 img3";
-    gap: 30px;
-    align-items: start;
 }
-
-.text-block { grid-area: text; }
-.image1 { grid-area: img1; }
-.image2 { grid-area: img2; }
-.image3 { grid-area: img3; }
-
-.text-block p {
-  font-size: 1.8vw;;
-    line-height: 1.8;
-}
-
-.image1, .image2, .image3 {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.image2, .image3 {
-    max-height: 350px;
-}
-
-.image1 {
-    max-height: 450px;
-}
-}
-
