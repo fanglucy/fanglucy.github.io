@@ -1,0 +1,256 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eaf3ff;
+}
+
+.header {
+  background: #114683; 
+  padding: 20px;
+  text-align: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.title {
+  color: #ffd49e;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+.menu-icon img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.menu-icon {
+    background-color: #ffd49e;
+}
+
+.navbar {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 163px;
+  width: 170px;
+  display: none;                     
+  flex-direction: column;
+  background: #ffd49e;
+  overflow: hidden;
+}
+
+.navbar.show {
+  display: flex;                    
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #153b74;
+  padding: 0.8rem 1rem;
+  display: block;
+}
+
+.navbar a:hover {
+  background: #f3f3f3;
+}
+
+
+.contact {
+  width: 80%;
+  max-width: 900px;
+  background: #153b74;
+  margin: 50px auto;
+  padding: 35px;
+  border-radius: 30px;
+  color: #ffd49e;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 20px 15px;
+  color: #ffd49e;
+  align-items: center;
+}
+
+.contact-form label {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+.submit {
+  grid-column: 1 / span 2;
+  margin: 20px auto 0;
+  width: 50%;
+  background: #ffd49e;
+  border: none;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #153b74;
+  font-weight: bold;
+}
+
+.submit:hover{
+    background-color: #fceacf;
+    color:#114683;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #114683;
+    padding: 5px;
+}
+
+@media screen and (min-width: 900px){
+    .menu-icon{
+        display: none;
+    }
+    .navbar {
+  background-color: #ffd49e;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: static;
+  gap: 120px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.4rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    background-color: #ffd49e;
+}
+}
+
+.services {
+  width: 95%;
+  max-width: 1000px;
+  margin: 40px auto;
+  color: #153b74;
+}
+
+.services h2 {
+  font-size: 2.4rem;
+  margin-bottom: 35px;
+}
+
+.service-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #eaf3ff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 70px;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: white;
+}
+
+.service-info p {
+  margin: 25px 0;
+  font-size: 1.2rem;
+}
+
+.service-info h3 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+}
+
+.consult-btn {
+  background: #153b74;
+  color: #ffd49e;
+  padding: 25px 26px;
+  font-size: 1.1rem;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.consult-btn:hover,
+.consult-btn:focus {
+  background-color: #1d4f8d;
+  text-decoration: underline;
+}
+
+.services-gallery {
+  display: grid;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 70px;
+}
+
+.services-gallery img {
+  width: 100%;
+  height: 40%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+  .service-profile {
+    max-width: 100%;
+    width: 100%;
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services {
+    width: 95%;
+    max-width: 1200px
+  }
+
+  .consult-btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
